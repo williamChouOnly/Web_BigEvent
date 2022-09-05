@@ -54,7 +54,7 @@ $(function () {
       function (res) {
         console.log(res.token)
         if (res.status !== 0) {
-          layer.msg(res.message)
+          return layer.msg(res.message)
         }
         localStorage.setItem('token',res.token)
         layer.msg(res.message)
