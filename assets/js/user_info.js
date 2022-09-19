@@ -45,11 +45,11 @@ $(function (){
       url: '/my/userinfo',
       data: {
         id: userId,
-        nickname: $('#data_form[name = nickname]').val(),
-        email: $('#data_form[name = email]').val()
+        nickname: $('#data_form[name=nickname]').val(),
+        email: $('#data_form[name=email]').val()
       },
       success: function(res) {
-        // console.log(res)
+        console.log(data)
         if (res.status !== 0) {
           return layer.msg(res.message)
         }
